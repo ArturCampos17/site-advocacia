@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritório de Advocacia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=balance" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=groups" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+
+    <header style="display: flex; align-items: center; justify-content: space-between; padding: 16px 0;">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo Escritório de Advocacia" style="height: 100px; margin-left: 50px;">
+        </a>
+        <nav style="display: flex; gap: 24px; justify-content: center; align-items: center; flex: 1;">
+            <a href="#sobre" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Sobre</a>
+            <a href="#equipe" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Equipe</a>
+            <a href="#atuacao" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Atuação</a>
+            <a href="#avaliacoes" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Avaliações</a>
+            <a href="#contato" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Fale
+                Conosco</a>
+        </nav>
+        <!-- <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</button> -->
+        <style>
+            header nav .nav-link {
+                position: relative;
+                color: #e7dbba;
+                text-decoration: none;
+            }
+
+            header nav .nav-link:hover {
+                color: #DAD4C4;
+                font-size: 1.45rem;
+            }
+
+            header nav .nav-link::after {
+                content: "";
+                position: absolute;
+                left: 18px;
+                right: 18px;
+                bottom: 4px;
+                height: 0;
+                background: #2E4A3B;
+                border-radius: 2px;
+                box-shadow: 0 2px 8px rgba(46, 74, 59, 0.18);
+                transition: height 0.2s;
+            }
+
+            header nav .nav-link:hover::after {
+                height: 4px;
+            }
+        </style>
+    </header>
+
+    <section id="sobre" class="bg-green"
+        style="display: flex; align-items: center; gap: 48px; padding: 48px; min-height: 75vh;">
+        <div style="flex: 1;">
+            <h2 style="color: #DAD4C4; font-size: 2.8rem; text-align: left; margin-bottom: 24px;">Lorem Ipsum is simply
+                dummy text of the printing and industry.</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 32px; text-align: left;">
+                Somos especialistas em Direito do Consumidor, atuando com excelência na proteção dos direitos dos nossos
+                clientes. Oferecemos soluções jurídicas eficientes e personalizadas para cada situação.
+            </p>
+            <a href="sobre.html"
+                style="background: #DAD4C4; color: #2E4A3B; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">
+                Saiba mais
+            </a>
+        </div>
+        <div style="flex: 0 0 60vw;width: 1fr; height: 500px; max-width: 500px;">
+            <img src="img/escritorio.png" alt="Foto do Escritório"
+                style="width: 90%; border-radius: 24px; border: 6px solid #DAD4C4; box-shadow: 0 8px 32px rgba(46,74,59,0.18);">
+        </div>
+    </section>
+
+    <section id="equipe" class="bg-light">
+        <h1 class="titulo-secao">
+            <span class="material-symbols-outlined">groups</span>
+            Nossa equipe
+        </h1>
+        <div class="carousel">
+            <div class="card">
+                <img src="img/enzo.jpg" alt="Dr. Enzo Tavares Trento Dagostin">
+                <h3>Dr. Enzo Tavares Trento Dagostin</h3>
+                <p>OAB/SC n° 63.245</p>
+                <p>Sócio Fundador</p>
+                <a href="sobre-adv.html"
+                    style="background: #DAD4C4; color: #2E4A3B; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">
+                    Saiba mais
+                </a>
+            </div>
+            <div class="card">
+                <img src="img/gabriel.jpg" alt="Dr. Gabriel">
+                <h3>Dr. Gabriel</h3>
+                <p>OAB: 67890/SP</p>
+                <p>Cargo: Advogado Associado</p>
+                <a href="sobre-adv.html"
+                    style="background: #DAD4C4; color: #2E4A3B; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">
+                    Saiba mais
+                </a>
+            </div>
+            <div class="card">
+                <img src="img/iracema.jpg" alt="Dra. Iracema">
+                <h3>Dra. Iracema</h3>
+                <p>OAB: 11223/SP</p>
+                <p>Cargo: Advogada Trabalhista</p>
+                <a href="sobre-adv.html"
+                    style="background: #DAD4C4; color: #2E4A3B; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">
+                    Saiba mais
+                </a>
+            </div>
+            <div class="card">
+                <img src="img/jose.jpg" alt="Dr. José">
+                <h3>Dr. José</h3>
+                <p>OAB: 44556/SP</p>
+                <p>Cargo: Advogado Empresarial</p>
+                <a href="sobre-adv.html"
+                    style="background: #DAD4C4; color: #2E4A3B; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">
+                    Saiba mais
+                </a>
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="atuacao" class="bg-green">
+        <div class="atuacao-header">
+            <div class="atuacao-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61" fill="none" class="icon">
+                    <path d="M18.5859 49.5625H42.4141" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M16.2031 16.2031L30.5 13.8203L44.7969 16.2031" stroke="currentColor" stroke-width="3.8"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M30.5 9.05469V49.5625" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M23.3516 30.5L16.2031 16.2031L9.05469 30.5C9.05469 32.3959 9.80782 34.2141 11.1484 35.5547C12.489 36.8953 14.3072 37.6484 16.2031 37.6484C18.099 37.6484 19.9172 36.8953 21.2578 35.5547C22.5984 34.2141 23.3516 32.3959 23.3516 30.5Z"
+                        stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M51.9453 30.5L44.7969 16.2031L37.6484 30.5C37.6484 32.3959 38.4016 34.2141 39.7422 35.5547C41.0828 36.8953 42.901 37.6484 44.7969 37.6484C46.6928 37.6484 48.511 36.8953 49.8516 35.5547C51.1922 34.2141 51.9453 32.3959 51.9453 30.5Z"
+                        stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h2>Áreas de atuação</h2>
+            </div>
+        </div>
+
+
+        <div class="atuacao-cards">
+            <!-- Card 1 -->
+            <div class="atuacao-card">
+                <h3>Direito <br> Trabalhista</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                </p>
+                <a href="direito-trabalhista.html" class="btn">Saiba mais</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="atuacao-card">
+                <h3>Direito <br> Previdenciário</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                </p>
+                <a href="direito-trabalhista.html" class="btn">Saiba mais</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="atuacao-card">
+                <h3>Direito <br> Cível</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                </p>
+                <a href="direito-trabalhista.html" class="btn">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="avaliacoes" class="avaliacoes-section">
+        <div class="container">
+            <h2>Avaliações de Clientes</h2>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <p>"Atendimento excelente e muito profissional!"</p>
+                    <span>- Cliente A</span>
+                </div>
+                <div class="review-card">
+                    <p>"Resolveram meu caso de forma rápida e eficiente."</p>
+                    <span>- Cliente B</span>
+                </div>
+                <div class="review-card">
+                    <p>"Equipe super dedicada, recomendo!"</p>
+                    <span>- Cliente C</span>
+                </div>
+                <div class="review-card">
+                    <p>"Equipe super dedicada, recomendo!"</p>
+                    <span>- Cliente D</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-green">
+        <div class="duvidas-container">
+            <div class="duvidas-icon">
+                <svg aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z">
+                    </path>
+                </svg>
+            </div>
+            <div class="duvidas-content">
+                <h3>Ficou com dúvidas?</h3>
+                <p> Lorem Ipsum is simply dummy text of the printing and industry Lorem Ipsum is simply dummy text of
+                    the printing and industry</p>
+                <a class="duvidas-btn" href="https://wa.me/5599999999999" target="_blank" rel="noopener">
+                    <svg aria-hidden="true" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                        </path>
+                    </svg>
+                    Fale conosco
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="bg-green">
+        <form id="contactForm">
+
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo + Endereço -->
+            <div class="footer-logo-address">
+                <a href="/">
+                    <img src="img/logoDs.png" alt="De Bem e Colombo Advogados Associados">
+                </a>
+                <b>
+                    <p class="footer-address">
+                        R. Joaquim Nabuco, 805 - Sala 309
+                    </p>
+                    <p class="footer-address">
+                        Michel, Criciúma - SC, 88803-000
+                    </p>
+                </b>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook" class="social-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="28"
+                        height="28">
+                    Dagostin & Simiano Advogados Associados
+                </a>
+                <a href="#" aria-label="Instagram" class="social-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"
+                        width="28" height="28">
+                    @Dagostin&SimianoAdvogadosAssociados
+                </a>
+                <a href="#" aria-label="LinkedIn" class="social-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="28"
+                        height="28">
+                    Dagostin & Simiano Advogados Associados
+                </a>
+
+            </div>
+
+            <!-- Mapa -->
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.1607310239474!2d-49.37298286094912!3d-28.68653394091563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952183904649c2c9%3A0x19dc4358854587c4!2sDagostin%20%26%20Simiano%20Advogados!5e1!3m2!1spt-BR!2sbr!4v1755411387582!5m2!1spt-BR!2sbr"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Dagostin & Simiano Advogados Associados. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511999999999" aria-label="WhatsApp" class="whatsapp-button" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" width="28"
+            height="28">
+    </a>
+    <script src="script.js"></script>
+</body>
+
+</html>

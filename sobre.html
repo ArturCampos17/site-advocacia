@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sobre.css">
+</head>
+
+<body>
+
+
+    <header style="display: flex; align-items: center; justify-content: space-between; padding: 16px 0;">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo Escritório de Advocacia" style="height: 100px; margin-left: 50px;">
+        </a>
+        <nav style="display: flex; gap: 24px; justify-content: center; align-items: center; flex: 1;">
+            <a href="#sobre" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Sobre</a>
+            <a href="#equipe" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Equipe</a>
+            <a href="#atuacao" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Atuação</a>
+            <a href="#avaliacoes" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Avaliações</a>
+            <a href="#contato" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Fale
+                Conosco</a>
+        </nav>
+        <!-- <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</button> -->
+        <style>
+            header nav .nav-link {
+                position: relative;
+                color: #e7dbba;
+                text-decoration: none;
+            }
+
+            header nav .nav-link:hover {
+                color: #DAD4C4;
+                font-size: 1.45rem;
+            }
+
+            header nav .nav-link::after {
+                content: "";
+                position: absolute;
+                left: 18px;
+                right: 18px;
+                bottom: 4px;
+                height: 0;
+                background: #2E4A3B;
+                border-radius: 2px;
+                box-shadow: 0 2px 8px rgba(46, 74, 59, 0.18);
+                transition: height 0.2s;
+            }
+
+            header nav .nav-link:hover::after {
+                height: 4px;
+            }
+        </style>
+    </header>
+
+    <section class="sobre-hero">
+        <img src="img/escritorio.png" alt="Escritório">
+        <div class="overlay">
+            <h1>Lorem Ipsum Dolor Sit Amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#sobre-historia" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section class="sobre-historia" id="sobre-historia">
+        <div class="advogado-container">
+            <div class="advogado-foto">
+                <img src="img/equipe.jpg" alt="Equipe do Escritório">
+            </div>
+            <div class="advogado-texto">
+                <h3>Nosso Escritório – Fundado em 2025</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sobre-equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="equipe-cards">
+            <div class="card">
+                <img src="img/enzo.jpg" alt="Dr. Enzo Tavares Trento Dagostin">
+                <h3>Dr. Enzo Tavares Trento Dagostin</h3>
+                <p>OAB/SC n° 63.245</p>
+                <p>Sócio Fundador</p>
+                <a href="sobre-adv.html" class="btn-saiba-mais">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="img/gabriel.jpg" alt="Dr. Gabriel">
+                <h3>Dr. Gabriel</h3>
+                <p>OAB: 67890/SP</p>
+                <p>Advogado Associado</p>
+                <a href="sobre-adv.html" class="btn-saiba-mais">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="img/iracema.jpg" alt="Dra. Iracema">
+                <h3>Dra. Iracema</h3>
+                <p>OAB: 11223/SP</p>
+                <p>Advogada Trabalhista</p>
+                <a href="sobre-adv.html" class="btn-saiba-mais">Saiba mais</a>
+            </div>
+            <div class="card">
+                <img src="img/jose.jpg" alt="Dr. José">
+                <h3>Dr. José</h3>
+                <p>OAB: 44556/SP</p>
+                <p>Advogado Empresarial</p>
+                <a href="sobre-adv.html" class="btn-saiba-mais">Saiba mais</a>
+            </div>
+        </div>
+        <p class="depoimento">"Profissionalismo e dedicação que fazem a diferença." – Cliente Satisfeito</p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo + Endereço -->
+            <div class="footer-logo-address">
+                <a href="/">
+                    <img src="img/logoDs.png" alt="De Bem e Colombo Advogados Associados">
+                </a>
+                <b>
+                    <p class="footer-address">
+                        R. Joaquim Nabuco, 805 - Sala 309
+                    </p>
+                    <p class="footer-address">
+                        Michel, Criciúma - SC, 88803-000
+                    </p>
+                </b>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook" class="social-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="28"
+                        height="28">
+                    Dagostin & Simiano Advogados Associados
+                </a>
+                <a href="#" aria-label="Instagram" class="social-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"
+                        width="28" height="28">
+                    @Dagostin&SimianoAdvogadosAssociados
+                </a>
+                <a href="#" aria-label="LinkedIn" class="social-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="28"
+                        height="28">
+                    Dagostin & Simiano Advogados Associados
+                </a>
+
+            </div>
+
+            <!-- Mapa -->
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.1607310239474!2d-49.37298286094912!3d-28.68653394091563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952183904649c2c9%3A0x19dc4358854587c4!2sDagostin%20%26%20Simiano%20Advogados!5e1!3m2!1spt-BR!2sbr!4v1755411387582!5m2!1spt-BR!2sbr"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Dagostin & Simiano Advogados Associados. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511999999999" aria-label="WhatsApp" class="whatsapp-button" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" width="28"
+            height="28">
+    </a>
+</body>
+
+</html>

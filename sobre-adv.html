@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sobre-adv.css">
+</head>
+
+<body>
+    <header style="display: flex; align-items: center; justify-content: space-between; padding: 16px 0;">
+
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo Escritório de Advocacia" style="height: 100px; margin-left: 50px;">
+        </a>
+        <nav style="display: flex; gap: 24px; justify-content: center; align-items: center; flex: 1;">
+            <a href="#sobre" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Sobre</a>
+            <a href="#equipe" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Equipe</a>
+            <a href="#atuacao" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Atuação</a>
+            <a href="#avaliacoes" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Avaliações</a>
+            <a href="#contato" class="nav-link"
+                style="font-size: 1.3rem; padding: 8px 18px; border-radius: 6px; transition: color 0.2s, font-size 0.2s;">Fale
+                Conosco</a>
+        </nav>
+        <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">☰</button>
+        <style>
+            header nav .nav-link {
+                position: relative;
+                color: #e7dbba;
+                text-decoration: none;
+            }
+
+            header nav .nav-link:hover {
+                color: #DAD4C4;
+                font-size: 1.45rem;
+            }
+
+            header nav .nav-link::after {
+                content: "";
+                position: absolute;
+                left: 18px;
+                right: 18px;
+                bottom: 4px;
+                height: 0;
+                background: #2E4A3B;
+                border-radius: 2px;
+                box-shadow: 0 2px 8px rgba(46, 74, 59, 0.18);
+                transition: height 0.2s;
+            }
+
+            header nav .nav-link:hover::after {
+                height: 4px;
+            }
+        </style>
+    </header>
+    <section class="team-section-dark">
+        <div class="team-container">
+            <div class="team-text">
+                
+                <h2>Dr. Enzo Dagostim</h2>
+                <p class="oab">OAB/SC 999994</p>
+                <p>2022 – Lorem Ipsum is simply dummy text of the printing and industry</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and industry</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and industryLorem Ipsum is simply dummy text of the
+                    printing and industryLorem Ipsum is simply dummy text of the printing and industryLorem Ipsum is
+                    simply dummy text of the printing and industry</p>
+            </div>
+            <div class="team-photo">
+                <img src="img/enzo.jpg" alt="Dr. Enzo Dagostim">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Áreas de Atuação -->
+    <div class="areas-atuacao">
+        <div class="container">
+            <div class="atuacao-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61" fill="none" class="icon">
+                    <path d="M18.5859 49.5625H42.4141" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M16.2031 16.2031L30.5 13.8203L44.7969 16.2031" stroke="currentColor" stroke-width="3.8"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M30.5 9.05469V49.5625" stroke="currentColor" stroke-width="3.8" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M23.3516 30.5L16.2031 16.2031L9.05469 30.5C9.05469 32.3959 9.80782 34.2141 11.1484 35.5547C12.489 36.8953 14.3072 37.6484 16.2031 37.6484C18.099 37.6484 19.9172 36.8953 21.2578 35.5547C22.5984 34.2141 23.3516 32.3959 23.3516 30.5Z"
+                        stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M51.9453 30.5L44.7969 16.2031L37.6484 30.5C37.6484 32.3959 38.4016 34.2141 39.7422 35.5547C41.0828 36.8953 42.901 37.6484 44.7969 37.6484C46.6928 37.6484 48.511 36.8953 49.8516 35.5547C51.1922 34.2141 51.9453 32.3959 51.9453 30.5Z"
+                        stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h2>Áreas de atuação</h2>
+            </div>
+            <div class="content">
+                <h3>Direito Cível</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and industry Lorem Ipsum is simply dummy text of
+                    the printing and industry
+                    Lorem Ipsum is simply dummy text of the printing and industry Lorem Ipsum is simply dummy text of
+                    the printing and industry
+                </p>
+                <button class="btn-saiba-mais">Saiba mais</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo + Endereço -->
+            <div class="footer-logo-address">
+                <a href="/">
+                    <img src="img/logoDs.png" alt="De Bem e Colombo Advogados Associados">
+                </a>
+                <b>
+                    <p class="footer-address">
+                        R. Joaquim Nabuco, 805 - Sala 309
+                    </p>
+                    <p class="footer-address">
+                        Michel, Criciúma - SC, 88803-000
+                    </p>
+                </b>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook" class="social-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="28"
+                        height="28">
+                    Dagostin & Simiano Advogados Associados
+                </a>
+                <a href="#" aria-label="Instagram" class="social-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"
+                        width="28" height="28">
+                    @Dagostin&SimianoAdvogadosAssociados
+                </a>
+                <a href="#" aria-label="LinkedIn" class="social-icon">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="28"
+                        height="28">
+                    Dagostin & Simiano Advogados Associados
+                </a>
+
+            </div>
+
+            <!-- Mapa -->
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.1607310239474!2d-49.37298286094912!3d-28.68653394091563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952183904649c2c9%3A0x19dc4358854587c4!2sDagostin%20%26%20Simiano%20Advogados!5e1!3m2!1spt-BR!2sbr!4v1755411387582!5m2!1spt-BR!2sbr"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Dagostin & Simiano Advogados Associados. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/5511999999999" aria-label="WhatsApp" class="whatsapp-button" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" width="28"
+            height="28">
+    </a>
+    <script src="script.js"></script>
+</body>
+
+</html>

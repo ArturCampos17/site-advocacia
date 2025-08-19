@@ -1,0 +1,155 @@
+.team-section-dark {
+    background-color: #0C3C24; 
+    color: #ffffff;
+    padding: 80px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.team-container {
+    display: flex;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    justify-content: flex-start; /* Texto à esquerda */
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: left; /* força o texto à esquerda */
+}
+
+.team-text {
+    flex: 1;
+    min-width: 300px;
+    justify-content: flex-start; 
+}
+
+.team-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.team-label svg {
+    fill: #ffffff;
+}
+
+.team-text h2 {
+    color: #D2BB50; /* mesmo dourado da área de atuação */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.team-text .oab {
+    color: #D2BB50; /* deixa OAB com a mesma cor */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.team-text p {
+    color: #ffffff; /* mantém o texto branco */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.team-photo {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.team-photo img {
+    width: 300px;
+    clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%); /* hexágono */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+.areas-atuacao .container,
+.areas-atuacao .content,
+.atuacao-icon {
+    text-align: left;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-photo img {
+        width: 250px;
+        margin-top: 30px;
+    }
+}
+
+.areas-atuacao {
+    background-color: #DAD3C3; /* cor de fundo semelhante à da imagem */
+    padding: 60px 20px;
+    color: #0C3C24; /* cor do texto */
+    font-family: Arial, sans-serif;
+}
+
+.areas-atuacao .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.atuacao-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espaço entre ícone e título */
+    color: #0C3C24; /* cor que você quer aplicar ao ícone */
+    display: flex;
+    justify-content: flex-start; /* garante que o conteúdo fique à esquerda */
+}
+
+.atuacao-icon h2 {
+    color: #0C3C24 !important /* cor específica para o título */;
+    font-size: 24px;
+    margin: 0;
+}
+.areas-atuacao .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.areas-atuacao .header .icon {
+    font-size: 24px;
+}
+
+.areas-atuacao .header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.areas-atuacao .content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.areas-atuacao .content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-saiba-mais {
+    background-color: #0C3C24;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #0C3C24;
+}
